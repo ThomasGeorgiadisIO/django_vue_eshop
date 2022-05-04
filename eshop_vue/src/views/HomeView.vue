@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <section class="hero is-medium is-dark md-6">
+    <section class="hero is-medium is-dark mb-6">
       <div class="hero-body has-text-centered">
-        <p class="title md-6">
+        <p class="title mb-6">
           Welcome to JShop
         </p>
         <p class="subtitle">
@@ -16,7 +16,7 @@
       </div>
       <div class="column is-3" v-for="product in latestProducts" v-bind:key="product.id">
         <div class="box">
-          <figure class="image md-4">
+          <figure class="image mb-4">
             <img v-bind:src="product.get_thumbnail">
           </figure>
           <h3 class="is-size-4">{{ product.name }}</h3>
@@ -34,7 +34,7 @@ export default {
   name: 'Home',
   data(){
     return {
-      latestProducts: []
+      latestProducts:[]
     }
   },
   components: {
